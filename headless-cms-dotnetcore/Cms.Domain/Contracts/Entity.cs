@@ -8,5 +8,16 @@ namespace Cms.Domain.Contracts
 {
     internal abstract class Entity
     {
+        private Guid id;
+
+        protected Entity(Guid id)
+        {
+            this.id = id;
+        }
+
+        protected Entity()
+        {
+            this.id = Guid.NewGuid();
+        }
     }
 }

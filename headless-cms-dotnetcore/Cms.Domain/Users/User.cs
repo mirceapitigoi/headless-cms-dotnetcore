@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace Cms.Domain.Users
 {
-    internal class User : IAggregateRoot
+    internal class User : Entity, IAggregateRoot
     {
         public Guid Id { get; set; }
 
         public Name Name { get; set; }
 
         public Password Password { get; set; }
+
+        public Email Email { get; set; }
     }
 }

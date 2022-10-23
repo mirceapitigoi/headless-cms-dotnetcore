@@ -27,6 +27,7 @@ namespace Cms.Domain.Users
 
         private void ValidateName(string firstName, string lastName)
         {
+            // todo implement FluentValidation
             throw new NotImplementedException();
         }
     }
