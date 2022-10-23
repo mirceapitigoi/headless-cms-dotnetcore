@@ -8,9 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Account\" />
-    <Folder Include="Contracts\" />
-    <Folder Include="Users\" />
-    <Folder Include="Roles\" />
   </ItemGroup>
 
 </Project>
