@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace Cms.Domain.Contracts
 {
-    internal abstract class Entity
+    internal abstract class Entity 
     {
-        private Guid id;
+        private Guid Id { get; }
 
         protected Entity(Guid id)
         {
             this.id = id;
         }
 
-        protected Entity()
+        protected Entity() : this(Guid.NewGuid())
         {
-            this.id = Guid.NewGuid();
         }
     }
 }

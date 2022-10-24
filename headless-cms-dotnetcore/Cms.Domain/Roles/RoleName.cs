@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace Cms.Domain.Roles
 {
-    internal class Role : Entity
+    internal class RoleName : ValueObject
     {
-        public RoleName roleName { get; set; }
-        public List<AccessRight> AccessRights { get; set; }
+        private readonly string name;
 
-        public Role(Guid id) : base(id)
+        public RoleName(string name)
         {
-
+            this.name = name;
         }
     }
 }
