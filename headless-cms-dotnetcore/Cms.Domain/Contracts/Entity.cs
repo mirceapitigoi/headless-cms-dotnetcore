@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Cms.Domain.Contracts
 {
-    internal abstract class Entity 
+    internal abstract class Entity //:IValidator
     {
         private Guid Id { get; }
 
         protected Entity(Guid id)
         {
-            this.id = id;
+            Id = id;
         }
 
         protected Entity() : this(Guid.NewGuid())

@@ -5,3 +5,4 @@
 /headless-cms-dotnetcore/.vs/headless-cms-dotnetcore
 /.vs
 /headless-cms-dotnetcore/Cms.Domain/obj
+/headless-cms-dotnetcore/Cms.Domain.UnitTests/obj

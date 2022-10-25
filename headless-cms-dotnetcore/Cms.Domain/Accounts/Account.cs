@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cms.Domain.Account
+namespace Cms.Domain.Accounts
 {
-    internal class Account : Entity
+    internal class Account : Entity//, IAggregateRoot
     {
         public User User { get; set; }
         public List<Role> Roles { get; set; }

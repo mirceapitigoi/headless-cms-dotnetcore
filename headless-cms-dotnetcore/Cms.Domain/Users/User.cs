@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cms.Domain.Users
 {
-    internal class User : Entity, IAggregateRoot
+    internal class User : Entity
     {
         public Name Name { get; set; }
 
